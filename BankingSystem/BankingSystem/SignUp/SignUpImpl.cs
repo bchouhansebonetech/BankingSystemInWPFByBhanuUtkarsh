@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BankingSystem.LogIn;
+using BankingSystem.MockDataFiles;
 
 namespace BankingSystem.SignUp
 {
@@ -27,12 +28,24 @@ namespace BankingSystem.SignUp
 
         private bool isUserAvailable(UserSignUpDataDO userSignUpDataDO)
         {
+            ReadData readData = new ReadData();
+            
+            List<UserSignUpDataDO> userSignUpDataDOList = readData.getUserSignUpDataDOs();
+
+            foreach (UserSignUpDataDO userSignUpDataDO1 in userSignUpDataDOList)
+            {
+                if (userSignUpDataDO.userName.Equals(userSignUpDataDO1.userName))
+                    return true;
+            }
+
             return false;
         }
 
         private bool createUser(UserSignUpDataDO userSignUpDataDO)
         {
-            return false;
+            WriteData writeData = new WriteData();
+            writeData.writeUserSignData(userSignUpDataDO);
+            return true;
         }
     }
 }

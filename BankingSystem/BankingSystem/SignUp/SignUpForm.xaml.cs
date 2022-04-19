@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BankingSystem.SignUp;
 
 namespace BankingSystem.SignUp
 {
@@ -35,7 +36,11 @@ namespace BankingSystem.SignUp
             userSignUpDataDO.pincode = Convert.ToInt32(txtPincode.Text);
             userSignUpDataDO.password = txtPassword.Text;
 
-            MessageBox.Show($"{userSignUpDataDO.firstName}, {userSignUpDataDO.lastName}, {userSignUpDataDO.userName}");
+            SignUpImpl signUpImpl = new SignUpImpl();
+            if (signUpImpl.userSignUp(userSignUpDataDO) != null)
+                MessageBox.Show($"User Created Name {userSignUpDataDO.firstName}, username {userSignUpDataDO.userName}");
+            else
+                MessageBox.Show("User is not created");
         }
     }
 }
