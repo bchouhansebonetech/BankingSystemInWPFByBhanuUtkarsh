@@ -30,7 +30,7 @@
         <Label x:Name="passwordLabel" Content="Password" HorizontalAlignment="Left" Margin="31,230,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Dubai" FontWeight="Bold" FontStyle="Italic" Grid.Column="2" Height="44" Width="91"/>
         <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="281,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" Height="28" Background="#FFF8F4F4" FontSize="20" FontFamily="Dubai" Grid.Column="2"/>
         <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="281,239,0,0"  VerticalAlignment="Top" Width="229" RenderTransformOrigin="1.115,3.376" Height="28" Background="{Binding Background, ElementName=usernameTextBox}" Grid.Column="2"/>
-        <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Left" Margin="353,340,0,46" Background="#FFA3CF82" FontSize="26" FontWeight="Bold" Width="84" FontFamily="Dubai" FontStyle="Italic" Grid.Column="2" Click="loginButton_Click" RenderTransformOrigin="0.535,0.648"/>
+        <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Left" Margin="353,340,0,46" Background="#FFA3CF82" FontSize="26" FontWeight="Bold" Width="84" FontFamily="Dubai" FontStyle="Italic" Grid.Column="2" Click="loginButton_Click" RenderTransformOrigin="0.5,0.5"/>
         <Button x:Name="signupbutton" Content="Signup" HorizontalAlignment="Left" Margin="472,340,0,0" VerticalAlignment="Top" Background="#FFA3CF82" FontSize="26" FontWeight="Bold" FontStyle="Italic" FontFamily="Dubai" Grid.Column="2" Height="48" Width="81" Click="signupbutton_Click"/>
 
     </Grid>

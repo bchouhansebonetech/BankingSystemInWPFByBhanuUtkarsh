@@ -34,6 +34,8 @@ namespace BankingSystem.LogIn
             }
             else
                 MessageBox.Show("Invalid Username or Password");
+            BankingSystem.SendMoneySelection.SendMoneySelection sendMoneySelection = new BankingSystem.SendMoneySelection.SendMoneySelection();
+            sendMoneySelection.Show();
 
         }
     }
