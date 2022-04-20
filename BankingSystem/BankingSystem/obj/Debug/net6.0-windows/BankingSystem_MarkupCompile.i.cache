@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Utkarsh Shrivastava\Source\Repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\
+C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\
 BankingSystem
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Utkarsh Shrivastava\Source\Repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\App.xaml
+C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\App.xaml
 4-1414831164
 
-211695088911
+22565792359
 1941645785384
 LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SignUp\SignUpForm.xaml;
 

@@ -22,21 +22,21 @@ namespace BankingSystem.LogIn
             signupform.Show();
         }
 
-        private void loginButton_Click(object sender, RoutedEventArgs e)
+      
+
+        private void loginButton_Click_1(object sender, RoutedEventArgs e)
         {
-            UserLogInDataDO userLogInData = new UserLogInDataDO(usernameTextBox.Text, PasswordBox.Password);
+                        UserLogInDataDO userLogInData = new UserLogInDataDO(usernameTextBox.Text, PasswordBox.Password);
             LogInImpl logInImpl = new  LogInImpl();
             bool logInStatus=logInImpl.loginAccess(userLogInData).status;
             if (logInStatus)
             {
                 MessageBox.Show("sucess");
-
+                BankingSystem.SendMoneySelection.SendMoneySelection sendMoneySelection = new BankingSystem.SendMoneySelection.SendMoneySelection();
+                sendMoneySelection.Show();
             }
             else
                 MessageBox.Show("Invalid Username or Password");
-            BankingSystem.SendMoneySelection.SendMoneySelection sendMoneySelection = new BankingSystem.SendMoneySelection.SendMoneySelection();
-            sendMoneySelection.Show();
-
         }
     }
 }

@@ -8,9 +8,7 @@
         Title="LogInForm" Height="450" Width="800">
     <Grid x:Name="LoginGrid" RenderTransformOrigin="0.508,0.512">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="59*"/>
-            <ColumnDefinition Width="28*"/>
-            <ColumnDefinition Width="713*"/>
+
         </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -18,7 +16,7 @@
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="WelcomeTextBlock" HorizontalAlignment="Left" Margin="164,24,0,0" TextWrapping="Wrap" Text="Login here" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Grid.Column="2" Height="64" Width="239">
+        <TextBlock x:Name="WelcomeTextBlock" HorizontalAlignment="Left" Margin="271,10,0,0" TextWrapping="Wrap" Text="Login here" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Height="64" Width="239">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -30,8 +28,8 @@
         <Label x:Name="passwordLabel" Content="Password" HorizontalAlignment="Left" Margin="31,230,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Dubai" FontWeight="Bold" FontStyle="Italic" Grid.Column="2" Height="44" Width="91"/>
         <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Margin="281,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" Height="28" Background="#FFF8F4F4" FontSize="20" FontFamily="Dubai" Grid.Column="2"/>
         <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="281,239,0,0"  VerticalAlignment="Top" Width="229" RenderTransformOrigin="1.115,3.376" Height="28" Background="{Binding Background, ElementName=usernameTextBox}" Grid.Column="2"/>
-        <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Left" Margin="353,340,0,46" Background="#FFA3CF82" FontSize="26" FontWeight="Bold" Width="84" FontFamily="Dubai" FontStyle="Italic" Grid.Column="2" Click="loginButton_Click" RenderTransformOrigin="0.5,0.5"/>
-        <Button x:Name="signupbutton" Content="Signup" HorizontalAlignment="Left" Margin="472,340,0,0" VerticalAlignment="Top" Background="#FFA3CF82" FontSize="26" FontWeight="Bold" FontStyle="Italic" FontFamily="Dubai" Grid.Column="2" Height="48" Width="81" Click="signupbutton_Click"/>
+        <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Center" Margin="0,340,0,0" VerticalAlignment="Top" Background="#FFA3CF82" FontSize="26" FontWeight="Bold" Width="84" FontFamily="Dubai" FontStyle="Italic" Height="48" RenderTransformOrigin="0.424,-0.365" Click="loginButton_Click_1"/>
+        <Button x:Name="signupbutton" Content="Signup" HorizontalAlignment="Left" Margin="483,340,0,0" VerticalAlignment="Top" Background="#FFA3CF82" FontSize="26" FontWeight="Bold" FontStyle="Italic" FontFamily="Dubai" Height="48" Width="81" Click="signupbutton_Click"/>
 
     </Grid>
 </Window>
