@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using BankingSystem.LogIn;
+
 
 namespace BankingSystem.LogIn
 {
@@ -28,6 +20,21 @@ namespace BankingSystem.LogIn
         {
             BankingSystem.SignUp.SignUpForm signupform = new BankingSystem.SignUp.SignUpForm();
             signupform.Show();
+        }
+
+        private void loginButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserLogInDataDO userLogInData = new UserLogInDataDO(usernameTextBox.Text, PasswordBox.Password);
+            LogInImpl logInImpl = new  LogInImpl();
+            bool logInStatus=logInImpl.loginAccess(userLogInData).status;
+            if (logInStatus)
+            {
+                MessageBox.Show("sucess");
+
+            }
+            else
+                MessageBox.Show("Invalid Username or Password");
+
         }
     }
 }

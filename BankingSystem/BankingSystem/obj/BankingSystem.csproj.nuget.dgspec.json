@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bhanu Singh\\source\\repos\\PracticeProgramProject\\WPFProject2\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {}
+    "C:\\Users\\Utkarsh Shrivastava\\Source\\Repos\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bhanu Singh\\source\\repos\\PracticeProgramProject\\WPFProject2\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {
+    "C:\\Users\\Utkarsh Shrivastava\\Source\\Repos\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bhanu Singh\\source\\repos\\PracticeProgramProject\\WPFProject2\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Utkarsh Shrivastava\\Source\\Repos\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
         "projectName": "BankingSystem",
-        "projectPath": "C:\\Users\\Bhanu Singh\\source\\repos\\PracticeProgramProject\\WPFProject2\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
-        "packagesPath": "C:\\Users\\Bhanu Singh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bhanu Singh\\source\\repos\\PracticeProgramProject\\WPFProject2\\BankingSystem\\BankingSystem\\obj\\",
+        "projectPath": "C:\\Users\\Utkarsh Shrivastava\\Source\\Repos\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
+        "packagesPath": "C:\\Users\\Utkarsh Shrivastava\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Utkarsh Shrivastava\\Source\\Repos\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bhanu Singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Utkarsh Shrivastava\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

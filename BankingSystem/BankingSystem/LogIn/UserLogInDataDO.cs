@@ -13,11 +13,10 @@ namespace BankingSystem.LogIn
         public bool status { get; set; }
 
         public UserLogInDataDO() { }
-        public UserLogInDataDO(string userName, string password, bool status)
+        public UserLogInDataDO(string userName, string password)
         {
             this.userName = userName;
             this.password = password;
-            this.status = status;
         }
     }
 }
