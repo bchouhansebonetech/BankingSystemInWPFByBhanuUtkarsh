@@ -14,12 +14,26 @@ namespace BankingSystem.MockDataFiles
         public void writeUserSignData(UserSignUpDataDO obj)
         {
             const string filePath = @"C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystem\BankingSystem\MockDataFiles\UserSignUpDummyData.csv";
+            int id = Convert.ToInt32(File.ReadLines(filePath).Last().Split(",")[0]) + 1;
+            string line = String.Format(Convert.ToString(id) + "," + obj.firstName + "," + obj.lastName + "," + obj.userName + "," + obj.email + "," + obj.city 
+                                        + "," + obj.pincode.ToString() + "," + obj.password);
+
+            File.AppendAllText(filePath, line + Environment.NewLine);
+            //using (StreamWriter sw = File.AppendText(filePath))
+            //{
+            //    sw.WriteLine(line);
+            //}
+            //var writer = new StreamWriter(filePath);
+            //string[] lines = File.ReadAllLines(filePath);
+            //lines.Append(line);
+
             //var writer = new StreamWriter(filePath);
 
-            string line = String.Format(obj.firstName + "," + obj.lastName + "," + obj.userName + "," + obj.email + "," + obj.city + "," + obj.pincode.ToString() + "," + obj.password);
-            File.AppendAllText(filePath, line + Environment.NewLine);
-            //writer.WriteLine(line);
-            //writer.Flush();
+            //foreach (var item in lines)
+            //{
+            //    writer.WriteLine(item);
+            //    writer.Flush();
+            //}
         }
     }
 }

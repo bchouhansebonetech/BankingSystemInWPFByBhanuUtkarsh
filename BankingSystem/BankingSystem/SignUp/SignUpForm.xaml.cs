@@ -38,9 +38,13 @@ namespace BankingSystem.SignUp
 
             SignUpImpl signUpImpl = new SignUpImpl();
             if (signUpImpl.userSignUp(userSignUpDataDO) != null)
+            {
                 MessageBox.Show($"User Created Name {userSignUpDataDO.firstName}, username {userSignUpDataDO.userName}");
+                BankingSystem.LogIn.LogInForm logInForm = new BankingSystem.LogIn.LogInForm();
+                logInForm.Show();
+            }
             else
-                MessageBox.Show("User is not created");
+                MessageBox.Show($"User is not created because username {userSignUpDataDO.userName} is already exist");
         }
     }
 }
