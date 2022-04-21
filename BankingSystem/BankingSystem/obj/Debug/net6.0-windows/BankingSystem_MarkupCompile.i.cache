@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\App.xaml
-4-1414831164
+5-1215715018
 
-22565792359
+251001089127
 1941645785384
-LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SignUp\SignUpForm.xaml;
+LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SendMoneyTransaction\SendMoneyTransaction.xaml;SignUp\SignUpForm.xaml;
 
-True
+False
 

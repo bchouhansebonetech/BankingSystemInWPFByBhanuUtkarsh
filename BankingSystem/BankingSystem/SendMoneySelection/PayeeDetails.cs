@@ -8,16 +8,17 @@ namespace BankingSystem.SendMoneySelection
 {
     public class PayeeDetails
     {
-        public String payeeName { get; set; }
         public String payeeAccountNo { get; set; }
+        public String payeeName { get; set; }
+        
 
         public String location { get; set; }
 
         public PayeeDetails() { }
-        public PayeeDetails(string pname, String payeeAc,string location)
+        public PayeeDetails(string payeeAc, String pName,string location)
         {
-            this.payeeName = pname;
             this.payeeAccountNo = payeeAc;
+            this.payeeName = pName;
             this.location = location;
         }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using BankingSystem.MockDataFiles;
-using BankingSystem.SignUp;
+using BankingSystem.SendMoneyTransaction;
 
 namespace BankingSystem.SendMoneySelection
 {
@@ -16,31 +16,38 @@ namespace BankingSystem.SendMoneySelection
         public SendMoneySelection()
         {
             InitializeComponent();
+
             payeeDetailList = new List<PayeeDetails>();
             ReadData readData = new ReadData();
-            List<UserSignUpDataDO> userSignUpDataDOs = readData.getUserSignUpDataDOs();
+            List<PayeeDetails> payeeDetailsList2 = readData.readPayeeData();
+           foreach(PayeeDetails payeeDetails in payeeDetailsList2)
+            {
+                PayeeDetails payeeDetails1 = new PayeeDetails(payeeDetails.payeeAccountNo,payeeDetails.payeeName,payeeDetails.location);
+                payeeDetailList.Add(payeeDetails1);
+
+
+            }
+          /*  List<UserSignUpDataDO> userSignUpDataDOs = readData.getUserSignUpDataDOs();
             foreach (UserSignUpDataDO userSignUpDataDO in userSignUpDataDOs)
             {
                 PayeeDetails payeeDetails = new PayeeDetails(userSignUpDataDO.firstName,userSignUpDataDO.userName,userSignUpDataDO.city);
                 payeeDetailList.Add(payeeDetails);
 
-            }
+            }*/
             DataContext = payeeDetailList;
 
 
         }
 
-       
 
         private void AddNewPayeeButton_Click(object sender, RoutedEventArgs e)
         {
-            //call add new payee
-        }
 
+        }
         private void SendMoneyButton_Click(object sender, RoutedEventArgs e)
         {
-            //send money object will be given to send money trancation
-
+            BankingSystem.SendMoneyTransaction.Window1 sendMoneyTransaction = new BankingSystem.SendMoneyTransaction.Window1();
+            sendMoneyTransaction.Show();
         }
     }
 }

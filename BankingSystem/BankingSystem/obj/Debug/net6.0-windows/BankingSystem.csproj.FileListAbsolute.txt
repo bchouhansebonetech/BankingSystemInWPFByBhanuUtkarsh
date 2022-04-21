@@ -50,3 +50,5 @@ C:\Users\Utkarsh Shrivastava\Source\Repos\BankingSystemInWPFByBhanuUtkarsh\Banki
 C:\Users\Utkarsh Shrivastava\Source\Repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\ref\BankingSystem.dll
 C:\Users\Utkarsh Shrivastava\Source\Repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\SendMoneySelection\SendMoneySelection.g.cs
 C:\Users\Utkarsh Shrivastava\Source\Repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\SendMoneySelection\SendMoneySelection.baml
+C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\SendMoneyTransaction\SendMoneyTransaction.g.cs
+C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\SendMoneyTransaction\SendMoneyTransaction.baml
