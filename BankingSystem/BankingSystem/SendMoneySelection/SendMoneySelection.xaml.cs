@@ -30,5 +30,17 @@ namespace BankingSystem.SendMoneySelection
 
         }
 
+       
+
+        private void AddNewPayeeButton_Click(object sender, RoutedEventArgs e)
+        {
+            //call add new payee
+        }
+
+        private void SendMoneyButton_Click(object sender, RoutedEventArgs e)
+        {
+            //send money object will be given to send money trancation
+
+        }
     }
 }

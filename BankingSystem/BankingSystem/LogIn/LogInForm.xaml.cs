@@ -22,11 +22,9 @@ namespace BankingSystem.LogIn
             signupform.Show();
         }
 
-      
-
         private void loginButton_Click_1(object sender, RoutedEventArgs e)
         {
-                        UserLogInDataDO userLogInData = new UserLogInDataDO(usernameTextBox.Text, PasswordBox.Password);
+            UserLogInDataDO userLogInData = new UserLogInDataDO(usernameTextBox.Text, PasswordBox.Password);
             LogInImpl logInImpl = new  LogInImpl();
             bool logInStatus=logInImpl.loginAccess(userLogInData).status;
             if (logInStatus)

@@ -6,18 +6,24 @@
         xmlns:local="clr-namespace:BankingSystem.SendMoneySelection"
         mc:Ignorable="d"
         Title="SendMoneySelection" Height="450" Width="800">
-    <Grid x:Name="SelectMoneyGriid" Background="#FFEBE5E5">
-        <TextBlock x:Name="SelectionTextBlock" HorizontalAlignment="Left" Margin="258,10,0,0" TextWrapping="Wrap" Text="Select To Pay" VerticalAlignment="Top" Height="56" Width="231" FontSize="36" Foreground="#FFB31414" FontWeight="Bold"/>
-        <Button x:Name="AddNewPayeeButton" Content="Add new payee" HorizontalAlignment="Left" Margin="642,141,0,0" VerticalAlignment="Top" Width="148" Background="#FFC17C89" FontSize="18" Height="28"/>
-        <ListView x:Name="PayeeDetailListView" d:ItemsSource="{Binding payeeDetailList}" Margin="10,92,185,0" Height="332" VerticalAlignment="Top" Background="#FFEBE5E5" FontSize="18" SelectedIndex="1" ItemsSource="{Binding Mode=OneWay}">
+    <Grid x:Name="SelectMoneyGriid" Background="#FF67083C">
+        <TextBlock x:Name="SelectionTextBlock" HorizontalAlignment="Left" Margin="258,10,0,0" TextWrapping="Wrap" Text="Select To Pay" VerticalAlignment="Top" Height="56" Width="231" FontSize="36" Foreground="#FFC1B9B9" FontWeight="Bold"/>
+        <Button x:Name="AddNewPayeeButton" Content="Add new payee" HorizontalAlignment="Left" Margin="621,45,0,0" VerticalAlignment="Top" Width="148" Background="#FFC17C89" FontSize="18" Height="28" Click="AddNewPayeeButton_Click"/>
+        <ListView x:Name="PayeeDetailListView" d:ItemsSource="{Binding payeeDetailList}" Margin="10,92,10,0" Height="332" VerticalAlignment="Top" Background="#FFAD4B79" FontSize="18" SelectedIndex="1" ItemsSource="{Binding Mode=OneWay}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding payeeName}" Header="Name" Width="200"></GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding payeeAccountNo}" Header="Account Number" Width="200"></GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding location}" Header="Location" Width="200"></GridViewColumn>
+                    <GridViewColumn Width="200">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="SendMoneyButton" Content="Sendmoney" Background="LightGreen" Click="SendMoneyButton_Click"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate> >
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content=" Send Money" HorizontalAlignment="Left" Margin="642,189,0,0" VerticalAlignment="Top" Background="#FF3B6DF6" FontSize="18" Width="148" Height="28"/>
     </Grid>
 </Window>

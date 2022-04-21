@@ -8,6 +8,6 @@ namespace BankingSystem.SendMoneySelection
 {
     public interface ISendMoneySelection
     {
-        public PayeeDetails sendMoneyToPayee(List<PayeeDetails> payees);
+        //public PayeeDetails sendMoneyToPayee(List<PayeeDetails> payees);
     }
 }

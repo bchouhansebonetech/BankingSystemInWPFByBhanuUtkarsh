@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace BankingSystem.SendMoneySelection
 {
-    internal class SendMoneySelectionImpl
-    {
-    }
+   
 }
