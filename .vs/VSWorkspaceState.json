@@ -3,8 +3,9 @@
     "",
     "\\BankingSystem",
     "\\BankingSystem\\BankingSystem",
-    "\\BankingSystem\\BankingSystem\\SendMoneySelection"
+    "\\BankingSystem\\BankingSystem\\SendMoneySelection",
+    "\\BankingSystem\\BankingSystem\\Transaction"
   ],
-  "SelectedNode": "\\BankingSystem\\BankingSystem.sln",
+  "SelectedNode": "\\BankingSystem\\BankingSystem\\Transaction\\TransactionDO.cs",
   "PreviewInSolutionExplorer": false
 }
