@@ -40,7 +40,7 @@ namespace BankingSystem.SignUp
             if (signUpImpl.userSignUp(userSignUpDataDO) != null)
             {
                 MessageBox.Show($"User Created Name {userSignUpDataDO.firstName}, username {userSignUpDataDO.userName}");
-                BankingSystem.LogIn.LogInForm logInForm = new BankingSystem.LogIn.LogInForm();
+                LogIn.LogInForm logInForm = new LogIn.LogInForm();
                 logInForm.Show();
             }
             else

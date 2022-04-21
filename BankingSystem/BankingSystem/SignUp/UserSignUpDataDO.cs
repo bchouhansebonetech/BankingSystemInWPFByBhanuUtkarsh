@@ -17,6 +17,12 @@ namespace BankingSystem.SignUp
         public string password;
 
         public UserSignUpDataDO() { }
+
+        public UserSignUpDataDO(string firstName, string lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
         public UserSignUpDataDO(string firstName, string lastName, string userName, string email, string city, int pincode, string password)
         {
             this.firstName = firstName;

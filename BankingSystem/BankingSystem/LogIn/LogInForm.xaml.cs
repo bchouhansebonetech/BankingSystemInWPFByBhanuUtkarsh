@@ -2,6 +2,7 @@
 using System;
 using System.Windows;
 using BankingSystem.LogIn;
+using BankingSystem.Transaction;
 
 
 namespace BankingSystem.LogIn
@@ -32,6 +33,8 @@ namespace BankingSystem.LogIn
                 MessageBox.Show("sucess");
                 BankingSystem.SendMoneySelection.SendMoneySelection sendMoneySelection = new BankingSystem.SendMoneySelection.SendMoneySelection();
                 sendMoneySelection.Show();
+                //TransactionForm transactionForm = new TransactionForm();
+                //transactionForm.Show();
             }
             else
                 MessageBox.Show("Invalid Username or Password");

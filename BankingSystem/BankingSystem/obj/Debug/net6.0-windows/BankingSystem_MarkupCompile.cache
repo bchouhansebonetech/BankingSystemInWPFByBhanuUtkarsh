@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\
+C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\obj\Debug\net6.0-windows\
 BankingSystem
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\App.xaml
-4-1414831164
+C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\App.xaml
+5719572900
 
-20-675841202
+24-1488687892
 1941645785384
-LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SignUp\SignUpForm.xaml;
+LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SignUp\SignUpForm.xaml;Transaction\TransactionForm.xaml;
 
 False
 

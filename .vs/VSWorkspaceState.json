@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BankingSystem",
+    "\\BankingSystem\\BankingSystem",
+    "\\BankingSystem\\BankingSystem\\SendMoneySelection"
   ],
-  "SelectedNode": "\\BankingSystem.sln",
+  "SelectedNode": "\\BankingSystem\\BankingSystem\\SendMoneySelection\\SendMoneySelection.xaml",
   "PreviewInSolutionExplorer": false
 }

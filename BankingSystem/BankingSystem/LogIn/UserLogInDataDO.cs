@@ -18,5 +18,12 @@ namespace BankingSystem.LogIn
             this.userName = userName;
             this.password = password;
         }
+
+        public UserLogInDataDO(string userName, string password, bool status)
+        {
+            this.userName=userName;
+            this.password=password;
+            this.status = status;
+        }
     }
 }

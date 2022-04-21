@@ -10,7 +10,7 @@ namespace BankingSystem.LogIn
 {
     public class LogInImpl : ILogIn
     {
-         public  UserLogInDataDO loginAccess(UserLogInDataDO userLoginDataDO)
+        public  UserLogInDataDO loginAccess(UserLogInDataDO userLoginDataDO)
         {
             if (userLoginDataDO.status == true)
                 return userLoginDataDO;
@@ -27,7 +27,8 @@ namespace BankingSystem.LogIn
                         if (user.userName == userLoginDataDO.userName && userLoginDataDO.password == user.password)
                         {
                             userLoginDataDO.status = true;
-                            
+                            WriteData writeData = new WriteData();
+                            writeData.writeLogInDataOfCurrentUser(userLoginDataDO);
                         }      
                     }
                 }

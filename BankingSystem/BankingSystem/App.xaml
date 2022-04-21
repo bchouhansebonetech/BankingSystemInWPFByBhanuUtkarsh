@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:BankingSystem"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+             <!--StartupUri="Transaction/TransactionForm.xaml">-->
              <!--StartupUri="LogIn/LogInForm.xaml">-->
              <!--StartupUri="SignUp/SignUpForm.xaml">-->
          

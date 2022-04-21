@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Utkarsh Shrivastava\\.nuget\\packages\\": {}
+    "C:\\Users\\Bhanu Singh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utkarsh Shrivastava\\Source\\Repos\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\Bhanu Singh\\source\\repos\\PracticeProgramProject\\WPFProject2\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
       "projectName": "BankingSystem",
-      "projectPath": "C:\\Users\\Utkarsh Shrivastava\\Source\\Repos\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
-      "packagesPath": "C:\\Users\\Utkarsh Shrivastava\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Utkarsh Shrivastava\\Source\\Repos\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\obj\\",
+      "projectPath": "C:\\Users\\Bhanu Singh\\source\\repos\\PracticeProgramProject\\WPFProject2\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
+      "packagesPath": "C:\\Users\\Bhanu Singh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bhanu Singh\\source\\repos\\PracticeProgramProject\\WPFProject2\\BankingSystemInWPFByBhanuUtkarsh\\BankingSystem\\BankingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Utkarsh Shrivastava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bhanu Singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
