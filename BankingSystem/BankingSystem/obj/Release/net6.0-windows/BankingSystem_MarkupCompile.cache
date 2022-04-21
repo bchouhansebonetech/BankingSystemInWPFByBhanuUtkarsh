@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\App.xaml
-5719572900
+6918689046
 
-24-1488687892
+27-1053391124
 1941645785384
-LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SignUp\SignUpForm.xaml;Transaction\TransactionForm.xaml;
+LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SendMoneyTransaction\SendMoneyTransaction.xaml;SignUp\SignUpForm.xaml;Transaction\TransactionForm.xaml;
 
 True
 

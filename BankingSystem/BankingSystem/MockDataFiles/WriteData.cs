@@ -22,6 +22,7 @@ namespace BankingSystem.MockDataFiles
                                         + "," + obj.pincode.ToString() + "," + obj.password);
 
             File.AppendAllText(filePath, line + Environment.NewLine);
+<<<<<<< HEAD
         }
 
         public void writeLogInDataOfCurrentUser(UserLogInDataDO userLogInDataDO)
@@ -34,6 +35,9 @@ namespace BankingSystem.MockDataFiles
             streamWriter.WriteLine(line);
             streamWriter.Flush();
             streamWriter.Close();
+=======
+
+>>>>>>> cf59538ec47589cf87283e8b7864a6f43604d77d
         }
     }
 }

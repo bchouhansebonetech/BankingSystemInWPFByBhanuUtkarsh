@@ -8,5 +8,6 @@ namespace BankingSystem.SendMoneyTransaction
 {
     public interface ISendMoneyTransaction
     {
+        public bool sendMoneyTransaction(SendMoneyData data);
     }
 }
