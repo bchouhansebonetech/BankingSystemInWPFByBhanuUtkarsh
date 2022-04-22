@@ -22,7 +22,7 @@
         </ListView>
         <TextBlock HorizontalAlignment="Center" Margin="0,22,0,0" TextWrapping="Wrap" Text="Transaction History" VerticalAlignment="Top" FontSize="24" FontWeight="SemiBold"/>
         <TextBlock HorizontalAlignment="Left" Margin="682,60,0,0" TextWrapping="Wrap" Text="User Name" VerticalAlignment="Top" FontSize="16" FontWeight="SemiBold"/>
-        <Button Content="Send Money" HorizontalAlignment="Center" Margin="0,370,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button Content="Send Money" HorizontalAlignment="Center" Margin="0,370,0,0" VerticalAlignment="Top" FontSize="18" Click="Button_Click"/>
         <!--<ComboBox HorizontalAlignment="Left" Margin="31,65,0,0" VerticalAlignment="Top" Width="120" IsDropDownOpen="False">
             <ComboBoxItem Content="Both"></ComboBoxItem>
             <ComboBoxItem Content="Credit"></ComboBoxItem>

@@ -10,13 +10,13 @@ namespace BankingSystem.Transaction
     {
         public string UserName { get; set; }
         public string TransactionID { get; set; }
-        public int Ammount { get; set; }
+        public double Ammount { get; set; }
         public string FromBank { get; set; }
         public string ToBank { get; set; }
         public string CreditOrDeposite { get; set; }
 
         public TransactionDO() { }
-        public TransactionDO(string UserName, string TransactionID, int Ammount, string FromBank, string ToBank, string CreditOrDeposite)
+        public TransactionDO(string UserName, string TransactionID, double Ammount, string FromBank, string ToBank, string CreditOrDeposite)
         {
             this.UserName = UserName;
             this.TransactionID = TransactionID;

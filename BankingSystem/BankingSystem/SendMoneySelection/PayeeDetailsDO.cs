@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankingSystem.SendMoneySelection
 {
-    public class PayeeDetails
+    public class PayeeDetailsDO
     {
         public String payeeAccountNo { get; set; }
         public String payeeName { get; set; }
@@ -14,8 +14,8 @@ namespace BankingSystem.SendMoneySelection
 
         public String location { get; set; }
 
-        public PayeeDetails() { }
-        public PayeeDetails(string payeeAc, String pName,string location)
+        public PayeeDetailsDO() { }
+        public PayeeDetailsDO(string payeeAc, String pName,string location)
         {
             this.payeeAccountNo = payeeAc;
             this.payeeName = pName;

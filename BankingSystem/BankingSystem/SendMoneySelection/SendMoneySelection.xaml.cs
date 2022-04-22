@@ -4,6 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using BankingSystem.MockDataFiles;
 using BankingSystem.SendMoneyTransaction;
+using BankingSystem.AddNewPayee;
 
 namespace BankingSystem.SendMoneySelection
 {
@@ -12,17 +13,17 @@ namespace BankingSystem.SendMoneySelection
     /// </summary>
     public partial class SendMoneySelection : Window
     {
-        public List<PayeeDetails> payeeDetailList { get; set; }
+        public List<PayeeDetailsDO> payeeDetailList { get; set; }
         public SendMoneySelection()
         {
             InitializeComponent();
 
-            payeeDetailList = new List<PayeeDetails>();
+            payeeDetailList = new List<PayeeDetailsDO>();
             ReadData readData = new ReadData();
-            List<PayeeDetails> payeeDetailsList2 = readData.readPayeeData();
-           foreach(PayeeDetails payeeDetails in payeeDetailsList2)
+            List<PayeeDetailsDO> payeeDetailsList2 = readData.readPayeeData();
+           foreach(PayeeDetailsDO payeeDetails in payeeDetailsList2)
             {
-                PayeeDetails payeeDetails1 = new PayeeDetails(payeeDetails.payeeAccountNo,payeeDetails.payeeName,payeeDetails.location);
+                PayeeDetailsDO payeeDetails1 = new PayeeDetailsDO(payeeDetails.payeeAccountNo,payeeDetails.payeeName,payeeDetails.location);
                 payeeDetailList.Add(payeeDetails1);
 
 
@@ -42,7 +43,8 @@ namespace BankingSystem.SendMoneySelection
 
         private void AddNewPayeeButton_Click(object sender, RoutedEventArgs e)
         {
-
+            AddNewPayee.AddNewPayeeForm addNewPayeeForm = new AddNewPayee.AddNewPayeeForm();
+            addNewPayeeForm.Show();
         }
         private void SendMoneyButton_Click(object sender, RoutedEventArgs e)
         {

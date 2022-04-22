@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\App.xaml
-6918689046
+7-542582135
 
-29188242437
+31792858464
 1941645785384
-LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SendMoneyTransaction\SendMoneyTransaction.xaml;SignUp\SignUpForm.xaml;Transaction\TransactionForm.xaml;
+AddNewPayee\AddNewPayeeForm.xaml;LogIn\LogInForm.xaml;MainWindow.xaml;SendMoneySelection\SendMoneySelection.xaml;SendMoneyTransaction\SendMoneyTransaction.xaml;SignUp\SignUpForm.xaml;Transaction\TransactionForm.xaml;
 
-False
+True
 

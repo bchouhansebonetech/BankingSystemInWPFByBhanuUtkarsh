@@ -14,14 +14,15 @@ namespace BankingSystem.MockDataFiles
 {
     public class ReadData
     {
-
+        string ProjectDir;
+        public ReadData()
+        {
+            ProjectDir = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
+        }
         public List<UserSignUpDataDO> getUserSignUpDataDOs()
         {
             List<UserSignUpDataDO> users = new List<UserSignUpDataDO>();
-            //const string filePath = @"C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\MockDataFiles\UserSignUpDummyData.csv";
-            string filePath = "";
-            //const string filePath = @"C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\MockDataFiles\UserSignUpDummyData.csv";
-            //const string filePath = @"C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystem\BankingSystem\MockDataFiles\UserSignUpDummyData.csv";
+            string filePath = ProjectDir + @"\MockDataFiles\UserSignUpDummyData.csv";
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string line = "";
@@ -41,15 +42,14 @@ namespace BankingSystem.MockDataFiles
         {
             List<TransactionDO> transactionDOs = new List<TransactionDO>();
 
-            //const string filePath = @"C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\MockDataFiles\TransactionDummyData.csv";
-            string filePath = "";
+            string filePath = ProjectDir + @"\MockDataFiles\TransactionDummyData.csv";
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string line = "";
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] values = line.Split(',');
-                    TransactionDO transactionDO = new TransactionDO(values[0], values[1], Convert.ToInt32(values[2]), values[3], values[4], values[5]);
+                    TransactionDO transactionDO = new TransactionDO(values[0], values[1], Convert.ToDouble(values[2]), values[3], values[4], values[5]);
                     transactionDOs.Add(transactionDO);
                 }
                 reader.Close();
@@ -61,8 +61,7 @@ namespace BankingSystem.MockDataFiles
         public UserLogInDataDO getCurrentUser()
         {
             UserLogInDataDO userLogInDataDO = null;
-            //const string filePath = @"C:\Users\Bhanu Singh\source\repos\PracticeProgramProject\WPFProject2\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\MockDataFiles\CurrentUserData.csv";
-            string filePath = "";
+            string filePath = ProjectDir + @"\MockDataFiles\CurrentUserData.csv";
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string line = "";
@@ -75,11 +74,10 @@ namespace BankingSystem.MockDataFiles
             }
             return userLogInDataDO;
         }
-        public List<PayeeDetails> readPayeeData()
+        public List<PayeeDetailsDO> readPayeeData()
         {
-            List<PayeeDetails> payeeDetailsList = new List<PayeeDetails>();
-            //const string filePath = @"C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\MockDataFiles\PayeeDetails.Csv";
-            string filePath = "";
+            List<PayeeDetailsDO> payeeDetailsList = new List<PayeeDetailsDO>();
+            string filePath = ProjectDir + @"\MockDataFiles\PayeeDetails.csv";
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string line = "";
@@ -87,9 +85,8 @@ namespace BankingSystem.MockDataFiles
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] values = line.Split(',');
-                    PayeeDetails payeeDetails = new PayeeDetails(values[0], values[1], values[2]);
+                    PayeeDetailsDO payeeDetails = new PayeeDetailsDO(values[0], values[1], values[2]);
                     payeeDetailsList.Add(payeeDetails);
-
                 }
                 reader.Close();
             }
@@ -100,9 +97,7 @@ namespace BankingSystem.MockDataFiles
         public Dictionary<string, SendMoneyData> readUserData()
         {
             Dictionary<string, SendMoneyData> data = new Dictionary<string, SendMoneyData>();
-            //filepath
-            string filePath = "";
-            //const string filePath = @"C:\Users\Utkarsh Shrivastava\source\repos\BankingSystemInWPFByBhanuUtkarsh\BankingSystem\BankingSystem\MockDataFiles\SendMoneyTransaction.Csv";
+            string filePath = ProjectDir + @"\MockDataFiles\SendMoneyTransaction.csv";
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string line = "";

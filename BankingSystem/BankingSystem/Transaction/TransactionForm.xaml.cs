@@ -87,5 +87,11 @@ namespace BankingSystem.Transaction
                 myList.ItemsSource = transactions;
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BankingSystem.SendMoneySelection.SendMoneySelection sendMoneySelection = new BankingSystem.SendMoneySelection.SendMoneySelection();
+            sendMoneySelection.Show();
+        }
     }
 }
